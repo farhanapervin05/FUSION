@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter basename="/FUSION">
       <Routes>
-        <Route path="/" element={<App />}>
+        <Route path="*" element={<App />}>
           <Route index element={<Home />} />
           <Route path="fusion" element={<FusionGenerator />} />
           <Route path="about" element={<About />} />
