@@ -46,6 +46,66 @@ const fusions = [
     desc: 'Mexican burrito filled with flavorful Indian curry and rice.',
     tip: 'Wrap tight and grill slightly to seal the deal.',
   },
+  {
+    name: 'Rajma Nachos',
+    desc: 'Crunchy nacho chips smothered in spicy North Indian rajma curry and cheese.',
+    tip: 'Use cheddar + mozzarella for that pull-worthy cheese action.'
+  },
+  {
+    name: 'Idli Sushi',
+    desc: 'South Indian idli meets Japanese sushi. Rolled with chutney and veggies.',
+    tip: 'Chill idlis before slicing for clean rolls.'
+  },
+  {
+    name: 'Miso Dal Soup',
+    desc: 'Earthy Indian dal gets an umami punch with Japanese miso paste.',
+    tip: 'Use red miso for deeper flavor and toss in some scallions.'
+  },
+  {
+    name: 'Pav Bhaji Sliders',
+    desc: 'Mumbai street-style bhaji stuffed in soft toasted burger buns.',
+    tip: 'Top with a cheese slice and toast the buns in butter. 😮‍💨'
+  },
+  {
+    name: 'Falafel Chaat',
+    desc: 'Middle Eastern falafel drizzled with tangy Indian chutneys and topped with sev.',
+    tip: 'Serve cold for a refreshing spicy-crunchy combo.'
+  },
+  {
+    name: 'Tandoori Mac & Cheese',
+    desc: 'Creamy mac with smoky tandoori masala, because bland cheese ain’t enough.',
+    tip: 'Top with breadcrumbs + coriander for that crisp finish.'
+  },
+  {
+    name: 'Biryani Tacos',
+    desc: 'Soft taco shells loaded with biryani rice, raita drizzle, and mint chutney.',
+    tip: 'Go light on the rice to keep the taco from collapsing like your GPA.'
+  },
+  {
+    name: 'Dosa Wraps',
+    desc: 'Crispy dosa used like tortilla wraps filled with spicy paneer or veggies.',
+    tip: 'Roll tight and serve with a mini sambar dip cup.'
+  },
+  {
+    name: 'Kimchi Paratha',
+    desc: 'Indian paratha stuffed with spicy Korean kimchi and gooey cheese.',
+    tip: 'Use ghee instead of oil to toast for that buttery flake factor.'
+  },
+  {
+    name: 'Gajar Halwa Pancakes',
+    desc: 'Desi carrot halwa sandwiched between fluffy American pancakes.',
+    tip: 'Drizzle with condensed milk for MAXIMUM slutty sweetness.'
+  },
+  {
+    name: 'Biryani Arancini',
+    desc: 'Italian rice balls but make it desi — biryani inside, crispy outside.',
+    tip: 'Use leftover biryani and a cheesy core for that surprise bite.',
+  },
+  {
+    name: 'Pav Bhaji Sliders',
+    desc: 'Indian street food meets American mini burgers. It’s messy, it’s sexy.',
+    tip: 'Toast your buns in butter and add melted cheese for the kill shot.',
+  }
 ];
 
 export default function Home() {
@@ -55,7 +115,6 @@ export default function Home() {
       justifyContent: 'center',
       padding: '2rem 1rem',
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-
     }}>
       <div style={{ maxWidth: 1000, width: '100%' }}>
         <h1 style={{ textAlign: 'center', marginBottom: '1rem' }}>Welcome to Fusion Food Generator</h1>
@@ -90,7 +149,7 @@ export default function Home() {
 
         <div style={{ textAlign: 'center', marginTop: '3rem' }}>
           <button
-            onClick={() => window.location.href = '/fusion'}
+            onClick={() => window.location.href = '/FUSION/fusion'}
             style={{
               background: '#222',
               color: 'white',
