@@ -116,7 +116,7 @@ export default function Home() {
       padding: '2rem 1rem',
       fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
     }}>
-      <div style={{ maxWidth: 1000, width: '100%' }}>
+      <div >
         <h1 style={{ textAlign: 'center', marginBottom: '1rem' }}>Welcome to Fusion Food Generator</h1>
         <p style={{ textAlign: 'center', fontSize: '1.1rem', color: '#555' }}>
           Unleash your culinary creativity with our fusion recipes and tips. Mix, match, and make magic in your kitchen.
@@ -127,15 +127,18 @@ export default function Home() {
         </h2>
 
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-          gap: '1.5rem',
+          display: 'flex',
+          flexWrap: 'wrap',
           justifyContent: 'center',
+          gap: '10px',
         }}>
           {fusions.map(({ name, desc, tip }) => (
             <div key={name} style={{
               padding: '1rem',
               border: '1px solid #ccc',
+              width: '16%',
+              minWidth: '350px',
+              height: '200px',
               borderRadius: '8px',
               boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
               backgroundColor: '#fff'
