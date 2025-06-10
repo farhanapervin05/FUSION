@@ -9,7 +9,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter basename="/FUSION/fusion">
+    <BrowserRouter basename="/FUSION">
       <Routes>
         <Route path="*" element={<App />}>
           <Route index element={<Home />} />

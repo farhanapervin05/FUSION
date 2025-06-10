@@ -7,21 +7,22 @@ export default function FusionGenerator() {
 
   const handleGenerate = () => {
     if (!cuisine1 || !cuisine2) {
-      setFusionResult("Umm babe? You gotta enter two cuisines first 😤");
+      setFusionResult("enter two cuisines first");
       return;
     }
 
-    const fusionDish = `${cuisine1} × ${cuisine2} Fusion Bomb 💣`;
-    setFusionResult(`Introducing: ${fusionDish}! Bet your tastebuds just screamed 🥵`);
+    const fusionDish = `${cuisine1} × ${cuisine2} Fusion Bomb `;
+    setFusionResult(`Introducing: ${fusionDish}! Bet your tastebuds just screamed!!`);
   };
 
   return (
     <div style={{alignItems: 'center'}}>
     <div style={{
-      // height: '100vh',
+      height: '100vh',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      marginLeft: '400px',
      
     }}>
       <div style={{
@@ -29,8 +30,10 @@ export default function FusionGenerator() {
         backgroundColor: '#fff',
         borderRadius: '16px',
         boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
-        maxWidth: '600px',
-        width: '90%',
+        // maxWidth: '600px',
+        width: '650px',
+        height : '550px',
+        // width: '100%',
         textAlign: 'center'
       }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: '#333' }}>✨ Build Your Fusion Fantasy ✨</h2>
@@ -63,9 +66,11 @@ export default function FusionGenerator() {
           }}
         />
         <br />
+        <p style={{marginTop :'40px'}}>Enter your two cuisines that you want to blend into a magical fusion</p>
         <button
           onClick={handleGenerate}
           style={{
+            marginTop:'70px',
             background: '#222',
             color: 'white',
             padding: '0.8rem 1.6rem',

@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const fusions = [
   {
     name: 'Paneer Tikka Pizza',
@@ -133,16 +134,28 @@ export default function Home() {
           gap: '10px',
         }}>
           {fusions.map(({ name, desc, tip }) => (
-            <div key={name} style={{
-              padding: '1rem',
-              border: '1px solid #ccc',
-              width: '16%',
-              minWidth: '350px',
-              height: '200px',
-              borderRadius: '8px',
-              boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
-              backgroundColor: '#fff'
-            }}>
+            <div
+              key={name}
+              style={{
+                padding: '1rem',
+                border: '1px solid #ccc',
+                width: '16%',
+                minWidth: '350px',
+                height: '200px',
+                borderRadius: '8px',
+                boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+                backgroundColor: '#fff',
+                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = 'translateY(-5px)';
+                e.currentTarget.style.boxShadow = '0 6px 12px rgba(0,0,0,0.2)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+              }}
+            >
               <h3 style={{ marginBottom: '0.5rem', color: '#222' }}>{name}</h3>
               <p style={{ fontSize: '0.95rem', color: '#444', marginBottom: '0.7rem' }}>{desc}</p>
               <p style={{ fontStyle: 'italic', color: '#666', fontSize: '0.85rem' }}>Tip: {tip}</p>
